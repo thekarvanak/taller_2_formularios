@@ -1,17 +1,257 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro de Niños - Ficha de Inscripción</title>
 </head>
 <body>
+
     <h1>Bienvenido a la ficha de inscripción</h1>
-    <p>Por favor, complete los siguientes formularios para inscribir a su hijo o hija en nuestra institución educativa.</p>
-    <ul>
-        <li><a href="student.html">Datos del Estudiante</a></li>
-        <li><a href="med_child.html">Información Médica del Niño o Niña</a></li>
-        <li><a href="info_familiar.html">Información Familiar</a></li>
+    <p class="intro">Por favor, complete los siguientes formularios para inscribir a su hijo o hija en nuestra institución educativa.</p>
+
+    <ul class="nav-links">
+        <li><a href="student.html">📋 Datos del Estudiante</a></li>
+        <li><a href="med_child.html">🏥 Información Médica</a></li>
+        <li><a href="info_familiar.html">👨‍👩‍👧 Información Familiar</a></li>
     </ul>
+
+    <!-- ==================== TABLA 1: DATOS DEL ESTUDIANTE ==================== -->
+    <div class="table-section">
+        <h2>Datos del Estudiante</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre Completo</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Lugar de Nacimiento</th>
+                    <th>Grado</th>
+                    <th>Sección</th>
+                    <th>Domicilio</th>
+                    <th>Teléfonos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>María José López Ramírez</td>
+                    <td>2015-03-12</td>
+                    <td>San José, Costa Rica</td>
+                    <td>3°</td>
+                    <td>A</td>
+                    <td>Barrio Los Ángeles, casa #14</td>
+                    <td>+506 8845-1234</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Carlos Andrés Mendoza Solís</td>
+                    <td>2016-07-25</td>
+                    <td>Heredia, Costa Rica</td>
+                    <td>2°</td>
+                    <td>B</td>
+                    <td>Residencial El Prado, apt 5B</td>
+                    <td>+506 7012-5678</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Valentina Castro Jiménez</td>
+                    <td>2014-11-08</td>
+                    <td>Cartago, Costa Rica</td>
+                    <td>4°</td>
+                    <td>A</td>
+                    <td>Urbanización La Paz, lote 22</td>
+                    <td>+506 6198-9012</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Diego Alejandro Vargas Mora</td>
+                    <td>2017-01-30</td>
+                    <td>Alajuela, Costa Rica</td>
+                    <td>1°</td>
+                    <td>C</td>
+                    <td>Calle 8, Avenida 3, casa #7</td>
+                    <td>+506 8333-4567</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Sofía Fernanda Rojas Arias</td>
+                    <td>2018-09-14</td>
+                    <td>Limón, Costa Rica</td>
+                    <td>Preescolar</td>
+                    <td>D</td>
+                    <td>Barrio El Carmen, frente al parque</td>
+                    <td>+506 7245-6789</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- ==================== TABLA 2: INFORMACIÓN MÉDICA ==================== -->
+    <div class="table-section">
+        <h2>Información Médica del Niño o Niña</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Tipo de Sangre</th>
+                    <th>Asma</th>
+                    <th>Convulsiones</th>
+                    <th>Otros Padecimientos</th>
+                    <th>Vacunas al Día</th>
+                    <th>Alergias</th>
+                    <th>Enfermedades Actuales</th>
+                    <th>Medicamentos</th>
+                    <th>Observaciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>María José López R.</td>
+                    <td><span class="badge badge-info">O+</span></td>
+                    <td><span class="badge badge-no">No</span></td>
+                    <td><span class="badge badge-no">No</span></td>
+                    <td>Ninguno</td>
+                    <td><span class="badge badge-si">Sí</span></td>
+                    <td>Alergia al polen</td>
+                    <td>Ninguna</td>
+                    <td>Loratadina 5mg (según necesidad)</td>
+                    <td>Llevar antihistamínico en el bolso</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Carlos Andrés Mendoza S.</td>
+                    <td><span class="badge badge-info">A+</span></td>
+                    <td><span class="badge badge-si">Sí</span></td>
+                    <td><span class="badge badge-no">No</span></td>
+                    <td>Asma leve</td>
+                    <td><span class="badge badge-si">Sí</span></td>
+                    <td>Ninguna</td>
+                    <td>Asma bronquial leve</td>
+                    <td>Salbutamol inhalador</td>
+                    <td>Tiene inhalador de emergencia</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Valentina Castro J.</td>
+                    <td><span class="badge badge-info">B-</span></td>
+                    <td><span class="badge badge-no">No</span></td>
+                    <td><span class="badge badge-no">No</span></td>
+                    <td>Ninguno</td>
+                    <td><span class="badge badge-si">Sí</span></td>
+                    <td>Ninguna</td>
+                    <td>Ninguna</td>
+                    <td>Ninguno</td>
+                    <td>Sin observaciones</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Diego Alejandro Vargas M.</td>
+                    <td><span class="badge badge-info">AB+</span></td>
+                    <td><span class="badge badge-no">No</span></td>
+                    <td><span class="badge badge-si">Sí</span></td>
+                    <td>Convulsiones febriles</td>
+                    <td><span class="badge badge-no">No</span></td>
+                    <td>Alergia a la penicilina</td>
+                    <td>Epilepsia controlada</td>
+                    <td>Ácido valproico 250mg</td>
+                    <td>No administrar penicilina. Contactar padres ante fiebre alta.</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Sofía Fernanda Rojas A.</td>
+                    <td><span class="badge badge-info">O-</span></td>
+                    <td><span class="badge badge-no">No</span></td>
+                    <td><span class="badge badge-no">No</span></td>
+                    <td>Ninguno</td>
+                    <td><span class="badge badge-si">Sí</span></td>
+                    <td>Intolerancia a la lactosa</td>
+                    <td>Ninguna</td>
+                    <td>Ninguno</td>
+                    <td>No puede consumir lácteos</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- ==================== TABLA 3: INFORMACIÓN FAMILIAR ==================== -->
+    <div class="table-section">
+        <h2>Información Familiar</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre Estudiante</th>
+                    <th>Nombre Madre</th>
+                    <th>Celular Madre</th>
+                    <th>Ocupación Madre</th>
+                    <th>Nombre Padre</th>
+                    <th>Celular Padre</th>
+                    <th>Ocupación Padre</th>
+                    <th>Situación Familiar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>María José López R.</td>
+                    <td>Ana Ramírez Guzmán</td>
+                    <td>+506 8845-0001</td>
+                    <td>Enfermera</td>
+                    <td>Jorge López Fernández</td>
+                    <td>+506 8845-0002</td>
+                    <td>Ingeniero civil</td>
+                    <td>Casados</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Carlos Andrés Mendoza S.</td>
+                    <td>Laura Solís Vargas</td>
+                    <td>+506 7012-0003</td>
+                    <td>Contadora</td>
+                    <td>Andrés Mendoza Pérez</td>
+                    <td>+506 7012-0004</td>
+                    <td>Administrador</td>
+                    <td>Unidos</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Valentina Castro J.</td>
+                    <td>Patricia Jiménez Mora</td>
+                    <td>+506 6198-0005</td>
+                    <td>Abogada</td>
+                    <td>Roberto Castro Blanco</td>
+                    <td>+506 6198-0006</td>
+                    <td>Médico</td>
+                    <td>Divorciados</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Diego Alejandro Vargas M.</td>
+                    <td>Carmen Mora Solano</td>
+                    <td>+506 8333-0007</td>
+                    <td>Profesora</td>
+                    <td>Luis Vargas Chacón</td>
+                    <td>+506 8333-0008</td>
+                    <td>Técnico electricista</td>
+                    <td>Casados</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Sofía Fernanda Rojas A.</td>
+                    <td>Gabriela Arias Montero</td>
+                    <td>+506 7245-0009</td>
+                    <td>Diseñadora gráfica</td>
+                    <td>Fernando Rojas Delgado</td>
+                    <td>+506 7245-0010</td>
+                    <td>Chef</td>
+                    <td>Separados</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 </body>
 </html>
