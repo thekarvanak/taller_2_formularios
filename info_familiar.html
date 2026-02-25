@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Inscripción</title>
+</head>
+<body>
+    <h1>Información Familiar</h1>
+    <form id="informacion_familiar" action="#" method="POST">
+        <!-- ====== INFORMACIÓN FAMILIAR ====== -->
+
+            <!-- MADRE -->
+            <fieldset>
+                <legend>Madre</legend>
+
+                <label for="nombreMadre">Nombre:</label><br>
+                <input type="text" id="nombreMadre" name="nombreMadre" required
+                       maxlength="100" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{2,100}"
+                       title="Solo letras y espacios"><br><br>
+
+                <label for="fechaNacMadre">Fecha de nacimiento:</label>
+                <input type="date" id="fechaNacMadre" name="fechaNacMadre" required
+                       min="1950-01-01" max="2010-12-31"><br><br>
+
+                <label for="domicilioMadre">Domicilio:</label><br>
+                <input type="text" id="domicilioMadre" name="domicilioMadre" required
+                       maxlength="200"><br><br>
+
+                <label for="celularMadre">Celular:</label>
+                <input type="tel" id="celularMadre" name="celularMadre" required
+                       maxlength="20" pattern="[\d\s\-\+\(\)]{7,20}"
+                       title="Solo números, espacios, guiones y paréntesis (7-20 caracteres)"><br><br>
+
+                <label for="ocupacionMadre">Ocupación:</label>
+                <input type="text" id="ocupacionMadre" name="ocupacionMadre" required
+                       maxlength="100"><br><br>
+
+                <label for="lugarTrabajoMadre">Lugar de trabajo:</label>
+                <input type="text" id="lugarTrabajoMadre" name="lugarTrabajoMadre"
+                       maxlength="100"><br><br>
+
+                <label for="telTrabajoMadre">Teléfono de trabajo:</label>
+                <input type="tel" id="telTrabajoMadre" name="telTrabajoMadre"
+                       maxlength="20" pattern="[\d\s\-\+\(\)]{7,20}"
+                       title="Solo números, espacios, guiones y paréntesis">
+            </fieldset>
+
+            <!-- PADRE -->
+            <fieldset>
+                <legend>Padre</legend>
+
+                <label for="nombrePadre">Nombre:</label><br>
+                <input type="text" id="nombrePadre" name="nombrePadre" required
+                       maxlength="100" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{2,100}"
+                       title="Solo letras y espacios"><br><br>
+
+                <label for="fechaNacPadre">Fecha de nacimiento:</label>
+                <input type="date" id="fechaNacPadre" name="fechaNacPadre" required
+                       min="1950-01-01" max="2010-12-31"><br><br>
+
+                <label for="domicilioPadre">Domicilio:</label><br>
+                <input type="text" id="domicilioPadre" name="domicilioPadre" required
+                       maxlength="200"><br><br>
+
+                <label for="celularPadre">Celular:</label>
+                <input type="tel" id="celularPadre" name="celularPadre" required
+                       maxlength="20" pattern="[\d\s\-\+\(\)]{7,20}"
+                       title="Solo números, espacios, guiones y paréntesis (7-20 caracteres)"><br><br>
+
+                <label for="ocupacionPadre">Ocupación:</label>
+                <input type="text" id="ocupacionPadre" name="ocupacionPadre" required
+                       maxlength="100"><br><br>
+
+                <label for="lugarTrabajoPadre">Lugar de trabajo:</label>
+                <input type="text" id="lugarTrabajoPadre" name="lugarTrabajoPadre"
+                       maxlength="100"><br><br>
+
+                <label for="telTrabajoPadre">Teléfono de trabajo:</label>
+                <input type="tel" id="telTrabajoPadre" name="telTrabajoPadre"
+                       maxlength="20" pattern="[\d\s\-\+\(\)]{7,20}"
+                       title="Solo números, espacios, guiones y paréntesis">
+            </fieldset>
+
+            <br>
+            <label>Situación Familiar:</label><br>
+            <input type="radio" id="casados" name="situacionFamiliar" value="casados" required>
+            <label for="casados">Casados</label>
+
+            <input type="radio" id="unidos" name="situacionFamiliar" value="unidos">
+            <label for="unidos">Unidos</label>
+
+            <input type="radio" id="separados" name="situacionFamiliar" value="separados">
+            <label for="separados">Separados</label>
+
+            <input type="radio" id="divorciados" name="situacionFamiliar" value="divorciados">
+            <label for="divorciados">Divorciados</label>
+
+            <input type="radio" id="unico" name="situacionFamiliar" value="unico">
+            <label for="unico">Único</label>
+    </form>
+</body>
+</html>
