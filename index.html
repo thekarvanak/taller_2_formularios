@@ -1,66 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=">
-    <title>Ficha de Inscripción</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <h1>Datos del estudiante</h1>
-    <form id="fichaInscripcion" action="#" method="POST">
-
-        <!-- ====== DATOS DEL ESTUDIANTE ====== -->
-
-            <label for="nombreCompleto">Nombre completo:</label><br>
-            <input type="text" id="nombreCompleto" name="nombreCompleto" required
-                   maxlength="100" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{2,100}"
-                   title="Solo letras y espacios, mínimo 2 caracteres"><br><br>
-
-            <label for="fechaNacimiento">Fecha de nacimiento:</label>
-            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required
-                   min="2007-01-01" max="2025-12-31"><br><br>
-
-            <label for="lugarNacimiento">Lugar de nacimiento:</label>
-            <input type="text" id="lugarNacimiento" name="lugarNacimiento" required
-                   maxlength="100"
-                   title="Ingrese el lugar de nacimiento"><br><br>
-
-            <label for="gradoIngresa">Grado que ingresa:</label>
-            <select id="gradoIngresa" name="gradoIngresa" required>
-                <option value="" disabled selected>-- Seleccione --</option>
-                <option value="preescolar">Preescolar</option>
-                <option value="1">1°</option>
-                <option value="2">2°</option>
-                <option value="3">3°</option>
-                <option value="4">4°</option>
-                <option value="5">5°</option>
-                <option value="6">6°</option>
-                <option value="7">7°</option>
-                <option value="8">8°</option>
-                <option value="9">9°</option>
-                <option value="10">10°</option>
-                <option value="11">11°</option>
-                <option value="12">12°</option>
-            </select>
-
-            <label for="seccion">Sección:</label>
-            <select id="seccion" name="seccion" required>
-                <option value="" disabled selected>-- Seleccione --</option>
-                <option value="A">A</option>
-                <option value="B">B</option>
-                <option value="C">C</option>
-                <option value="D">D</option>
-            </select><br><br>
-
-            <label for="domicilioEstudiante">Domicilio:</label><br>
-            <input type="text" id="domicilioEstudiante" name="domicilioEstudiante" required
-                   maxlength="200"
-                   title="Ingrese la dirección de domicilio"><br><br>
-
-            <label for="telefonos">Teléfonos:</label><br>
-            <input type="tel" id="telefonos" name="telefonos" required
-                   maxlength="20" pattern="[\d\s\-\+\(\)]{7,20}"
-                   title="Solo números, espacios, guiones y paréntesis (7-20 caracteres)"><br>
-    </form>
+    <h1>Bienvenido a la ficha de inscripción</h1>
+    <p>Por favor, complete los siguientes formularios para inscribir a su hijo o hija en nuestra institución educativa.</p>
+    <ul>
+        <li><a href="student.html">Datos del Estudiante</a></li>
+        <li><a href="med_child.html">Información Médica del Niño o Niña</a></li>
+        <li><a href="info_familiar.html">Información Familiar</a></li>
+    </ul>
 </body>
 </html>
